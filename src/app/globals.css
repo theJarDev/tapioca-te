@@ -18,10 +18,18 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #dddddd;
+}
+
+.banner {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.40) 41.15%, rgba(0, 0, 0, 0.90) 100%), url(/banner-desktop.webp), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 1920px) {
+  .banner {
+    background-position: 0% 35%;
+  }
 }
