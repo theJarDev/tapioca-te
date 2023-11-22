@@ -15,7 +15,7 @@ export default function Hero() {
             </div>
             <div className="flex justify-between px-4">
                 <div className="flex flex-col py-2 gap-2 w-[45%]">
-                    <h2 className="text-base md:text-xl">¡Ahora con servicio a domicilio!</h2>
+                    <h2 className="text-base text-black md:text-xl">¡Ahora con servicio a domicilio!</h2>
                     <a href="https://wa.me/528121893717" target="_blank" className="w-fit py-2 px-4 text-center text-black font-semibold bg-[#FFC6C8] shadow-lg rounded">Haz tu pedido</a>
                 </div>
                 <Image 
