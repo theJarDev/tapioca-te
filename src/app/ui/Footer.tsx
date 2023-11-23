@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
     return (
-        <footer className="flex flex-col bg-white">
+        <footer className="flex flex-col bg-white mt-6">
             <div className=" flex items-center justify-between pl-1 py-4 pr-4">
                 <Image 
                     src='/tapioca-logo.svg'
