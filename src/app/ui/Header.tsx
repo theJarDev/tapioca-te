@@ -36,16 +36,18 @@ const Header = () => {
           <div className="hidden lg:flex space-x-4">
             <Link href="/" className="text-black">Inicio</Link>
             <Link href="/menu" className="text-black">Menú</Link>
-            <Link href="/ubicacion" className="text-black">Ubicación</Link>
-            <Link href="/contacto" className="text-black">Contacto</Link>
+            <Link href="/promociones" className="text-black">Promociones</Link>
+            {/* <Link href="/ubicacion" className="text-black">Ubicación</Link>
+            <Link href="/contacto" className="text-black">Contacto</Link> */}
           </div>
         </div>
 
         <div className={`lg:hidden ${isMenuOpen ? 'flex flex-col items-center' : 'hidden'}`}>
           <Link href="/" className="block text-black pt-4">Inicio</Link>
           <Link href="/menu" className="block text-black pt-4">Menú</Link>
-          <Link href="/ubicacion" className="block text-black pt-4">Ubicación</Link>
-          <Link href="/contacto" className="block text-black pt-4">Contacto</Link>
+          <Link href="/promociones" className="block text-black pt-4">Promociones</Link>
+          {/* <Link href="/ubicacion" className="block text-black pt-4">Ubicación</Link>
+          <Link href="/contacto" className="block text-black pt-4">Contacto</Link> */}
         </div>
       </nav>
     </header>

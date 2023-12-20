@@ -1,17 +1,25 @@
-import MenuCard from './MenuCard';
+import Link from 'next/link';
 
-export default function Menu() {
+export default function Menu({
+    children,
+    title,
+    home,
+  }: {
+    children: React.ReactNode,
+    title: string,
+    home: boolean,
+  }) {
     return (
-        <section className="p-4 mt-4">
-            <h2 className="text-center text-2xl font-bold text-black drop-shadow-md ">Nuestro Menú</h2>
-            <div className='flex flex-wrap justify-center gap-4 mt-4'>
-                <MenuCard src='/oreo.png' alt='Oreo' name='Oreo' price={80} />
-                <MenuCard src='/taro.png' alt='Taro' name='Taro' price={80} />
-                <MenuCard src='/fresa.png' alt='Fresa' name='Fresa' price={75} />
-                <MenuCard src='/moka.png' alt='Moka' name='Moka' price={75} />
-                <MenuCard src='/nutella.png' alt='Nutella' name='Nutella' price={80} />
-                <MenuCard src='/churro.png' alt='Churro' name='Churro' price={75} />
-            </div>
-        </section>
+        <>
+            <section className="p-4 mt-4 flex flex-col items-center gap-4">
+                {home && <div className='gradient absolute z-10 -m-4 mt-4 w-full h-[35rem] '></div>}
+                <h2 className="text-3xl font-bold text-black text-shadow"> {title} </h2>
+                <div className='flex flex-wrap justify-center gap-4'>
+                    {children}
+                </div>
+                
+                {home && <Link href="/menu" className='z-20 -mt-8  py-2 px-6 text-center text-black font-semibold bg-[#FFC6C8] shadow-lg rounded' > {"Ver Todo 🡵"} </Link>}
+            </section>
+        </>
     )
 }
